@@ -9,7 +9,7 @@ const Form = ({persona, setPersona, setShow}) => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        if ((persona.nombre.length > 3 && persona.nombre.length[0] != ' ') && persona.cantanteFavorito.length > 6 ) {
+        if ((persona.nombre.length > 2 && persona.nombre.length[0] != ' ') && persona.cantanteFavorito.length > 5 ) {
             setShow(true)
             setError(false)
         } else {
